@@ -1,0 +1,407 @@
+/* * {
+  border: 1px solid yellow;
+} */
+
+:root {
+  --grisfonce--: #2d3142;
+}
+
+body {
+  margin: 0px;
+  display: flex;
+  width: 100vw;
+  /* height: 100vw; */
+}
+
+#photoCv {
+  display: flex;
+  justify-content: center;
+}
+
+#photoCv > img {
+  display: flex;
+  /* border: 10px solid black; */
+  width: 50%;
+  /* justify-content: center;
+    align-items: center; */
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: var(--grisfonce--);
+  justify-content: space-between;
+  color: white;
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 70%;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+.titre > ul > li {
+  list-style-type: none;
+}
+
+.titre > h1 {
+  border-bottom: 2px solid red;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#presentation > h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#presentation > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#presentation {
+  /* border: 2px double black; */
+  margin-top: 3%;
+  padding: 3%;
+}
+
+.titre {
+  /* border: 20px solid black; */
+  padding: 3%;
+  /* margin: 20px; */
+}
+#listeContact > li {
+  list-style-type: none;
+  padding-bottom: 2px;
+  display: flex;
+  gap: 10%;
+}
+#listeFormation > li {
+  list-style-type: none;
+  margin-bottom: 3%;
+  /* display: flex;
+    justify-content: space-between; */
+}
+
+.lateral {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#mobileScreen {
+  display: none;
+}
+
+#listeContact {
+  padding-left: 20px;
+  }
+
+#listeFormation {
+  padding-left: 20px;
+}
+
+.lateral > ul {
+  padding-left: 40px;
+}
+
+@media (max-width: 600px) {
+  * {
+    margin: 0%;
+    padding: 0%;
+    margin-top: 0%;
+  }
+  body {
+    width: auto;
+    /* border: 3px solid red */
+  }
+  header,
+  main {
+    display: none;
+  }
+
+  #mobileScreen {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    /* border: 2px solid blue; */
+    width: 100%;
+  }
+  
+  #presentation {
+    display: flex;
+    flex-direction: column;
+    /* align-content: flex-end; */
+    width: auto;
+    margin-top: 0%;
+    background-color: #2d3142;
+    color: white;
+    /* border: 1px solid black; */
+  }
+  #presentation>h2{
+    margin-bottom: 2%;
+    padding-bottom: 1%;
+  }
+  #bloc1 {
+    display: flex;
+    align-items: center;
+  }
+  #photoCv {
+    display: flex;
+    justify-content: flex-start;
+    /* border: 1px solid black; */
+    width: 100%;
+
+  }
+  #bloc1 > img {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  #presentation-text {
+    flex-basis: 75%;
+    padding-left: 2%;
+  }
+#ligne2{
+    display: flex;
+    justify-content: flex-start;
+    }
+#formation{
+    display: flex;
+    flex-basis: 75%;
+    margin-top: 2%;
+}
+#ligne2{
+  display: flex;
+  /* width: auto; */
+  flex-direction: column;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+#contact{
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  }
+  #contact>h2{
+    display: flex;
+    color: var(--grisfonce--);
+    border: 2px solid --grisfonce--;
+    border-radius: 10px;
+    padding: 2%;
+    background-color: #2d3142;
+    color: white;
+  }
+#liste-contact > p{
+  display: flex;
+  margin: 0px;
+  padding: 2%;
+  gap: 5%;
+  margin-top: 2%;
+}
+#ligne3{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0px;
+}
+#formation{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3%;
+}
+#formation>h2{
+  display: flex;
+  color: var(--grisfonce--);
+  border: 2px solid --grisfonce--;
+  border-radius: 10px;
+  padding: 2%;
+  background-color: #2d3142;
+  color: white;
+
+
+}
+#listeFormation{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ text-align: center;
+ padding-top: 2%;
+ padding-bottom: 5%;
+}
+
+#experiences{
+  display: flex;
+  flex-direction: colum;
+  width: 100%;
+}
+#liste-expe{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-top: 2%;
+padding-bottom: 2%;
+}
+#liste-expe >h2{
+text-align: center;
+display: flex;
+color: var(--grisfonce--);
+border: 2px solid black;
+border-radius: 10px;
+padding: 2%;
+background-color: #2d3142;
+color: white;
+}
+#liste-expe >h3{
+  padding-top: 3%;
+}
+
+#ligne4{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0px;
+
+}
+
+#competences{
+  display: flex;
+  flex-direction: colum;
+  align-items: center;
+  width: 100%;
+  margin: 0px;
+  padding-left: 0px;
+  
+}
+
+#liste-competences{
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding-left: 2%;
+}
+#liste-competences>h2{
+  display: flex;
+  color: var(--grisfonce--);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 2%;
+  background-color: #2d3142;
+  color: white;
+  padding: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+
+}
+
+#liste-competences > h3{
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+.detail_competences {
+list-style-type: circle;
+padding: 0%;
+}
+#ligne5{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2%;
+  }
+  #ligne5>h3{
+    padding-top: 2%;
+  }
+
+#ligne6{
+  display: flex;
+  /* flex-direction: column; */
+  width: 100%;
+  margin: 0px;
+
+  }
+#savoir-etre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 2%;
+}
+#savoir-etre>h2{
+  display: flex;
+  text-align: center;
+  display: flex;
+  color: var(--grisfonce--);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 2%;
+  background-color: #2d3142;
+  color: white;
+  align-items: center;
+  padding-top: 9%;
+  padding-bottom: 9%;
+}
+#savoir-etre>p{
+  padding-top: 3%;
+}
+#centres-interet{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+#centres-interet>p{
+  padding-top: 3%;
+
+}
+
+#centres-interet>h2{
+  display: flex;
+  text-align: center;
+  display: flex;
+  color: --;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 2%;
+  background-color: #2d3142;
+  color: white;
+  padding: 2%;
+
+
+}
+
+/* @media (max-width: 1024px) {
+
+#header{
+  width: 35%;
+}
+
+#main{
+  width: 65%;
+}
+
+#listeContact{
+  padding-right: 2px;
+
+} */
