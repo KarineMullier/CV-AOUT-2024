@@ -188,7 +188,7 @@ text-transform: uppercase;
 .list-mission{
   /* list-style-type: none; */
   list-style: "\2794";
-  list-style-image: 
+  /* list-style-image:  */
 }
 #experiences-part{
   display: flex;
@@ -205,9 +205,9 @@ text-transform: uppercase;
 .competences>img{
   width: 8vw;
 }
-.competences> h3{
+/* .competences > h3{
   /* color: white; */
-}
+/* } */ 
 .range{
   width: 80%;
   border: 2px solid var(--rouge--);
@@ -219,6 +219,7 @@ text-transform: uppercase;
   text-align: center;
   border-radius: 25px;
   color: var(--rouge--);
+  animation: animateSkillsToEighty 2s;
 }
 #cinquante{
   background-color: var(--rouge--);
@@ -226,7 +227,26 @@ text-transform: uppercase;
   text-align: center;
   border-radius: 25px;
   color: var(--rouge--);
+  animation: animateSkillsToFifty 2s;
 }
+@keyframes animateSkillsToFifty {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  } 
+}
+@keyframes animateSkillsToEighty {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  } 
+}
+
+
 @media(max-width : 680px){
   body{
     flex-direction: column;
